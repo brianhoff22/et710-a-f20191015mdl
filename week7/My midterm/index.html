@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="spaApp" class="no-js" lang="en" dir="ltr">
+<html ng-app-"spaApp" class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -83,12 +83,15 @@
     <!-- *Begin Content -->
     <div ng-view></div>
     <!-- *Begin AngularJS -->
-    <div>
 
-      <input type="text" ng-model=  placeholder=Hello!>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
       <hr>
-      <h1>Hello!</h1>
+      <h1>Hello {{yourName}}!</h1>
     </div>
+
+
     <!-- *End AngularJS -->
     <!-- *End Content -->
 
